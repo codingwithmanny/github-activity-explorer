@@ -38,21 +38,8 @@ jobs:
           name: cypress
           command: yarn test:e2e:run
 
-  deploy:
-    machine: true
-    steps:
-      - run:
-          name: deploy to netlify
-          command: curl -X POST -d {} $NETLIFY_HOOK
-
 workflows:
   version: 2
   test-deploy:
     jobs:
       - test
-      - deploy:
-          requires:
-            - test
-          filters:
-            branches:
-              only: master
