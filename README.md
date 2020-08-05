@@ -1,13 +1,15 @@
 # GitHub Activity Explorer
 
-A web based SPA React application that allows you to see the commit history for
-different GitHub repositories.
+A SPA React application that allows you to see the commit history for different
+GitHub repositories.
 
-Data is from 52 weeks of the year, assumes Monday as starting day of the week.
-Each commit history retrieval maxes out at 100 entries.
+Data is 52 weeks from the current date and assumes Monday as starting day of the
+week. Each commit history retrieval maxes out at 100 entries from GitHub.
 
 **Preview:**
 [https://hungry-albattani-a8665a.netlify.app](https://hungry-albattani-a8665a.netlify.app)
+
+![Preview](markdown/preview.png)
 
 ---
 
@@ -89,6 +91,16 @@ yarn test:e2e:run;
 The second phase of CircleCI is to automatically trigger a deployment to Netlify
 when all tests have passed.
 
+![CircleCI Deployment](markdown/circleci-deployment.png)
+
+This will trigger Netlify to start the build and deployment process:
+
+![Netlify Deployment](markdown/netlify-deployment.png)
+
+You can also verify the commit deployed on the frontend from:
+
+![Netlify Commit](markdown/netlify-commit.png)
+
 ### Netlify
 
 All deployments are pushed to
@@ -117,8 +129,8 @@ There are two hooks
 1 - `.huskyrc` which is a githook which runs lint-staged and performs a test on
 each commit
 
-2 - `.lintstagedrc` which handles testing only staged files vs all files
-currently working on
+2 - `.lintstagedrc` which handles formatting only staged files vs unstaged files
+currently being worked on
 
 ---
 
