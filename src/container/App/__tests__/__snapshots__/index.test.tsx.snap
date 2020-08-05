@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders App Default State 1`] = `
+Array [
+  <div
+    className="sc-AxjAm dXYzTG"
+  >
+    <div />
+  </div>,
+  <div
+    className="sc-Axmtr gdUrxV"
+  >
+    <div
+      className="sc-fzoLsD jJGyxE"
+      loading="false"
+    >
+      <svg
+        height="38"
+        stroke="#fff"
+        viewBox="0 0 38 38"
+        width="38"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <g
+            strokeWidth="2"
+            transform="translate(1 1)"
+          >
+            <circle
+              cx="18"
+              cy="18"
+              r="18"
+              strokeOpacity=".5"
+            />
+            <path
+              d="M36 18c0-9.94-8.06-18-18-18"
+            >
+              <animateTransform
+                attributeName="transform"
+                dur="1s"
+                from="0 18 18"
+                repeatCount="indefinite"
+                to="360 18 18"
+                type="rotate"
+              />
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="sc-fzozJi fGotTV"
+    >
+      <div>
+        <svg
+          aria-hidden="true"
+          className="StyledIconBase-ea9ulj-0 jVnGjM"
+          fill="none"
+          focusable="false"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx={12}
+            cy={12}
+            r={4}
+          />
+          <line
+            x1={1.05}
+            x2={7}
+            y1={12}
+            y2={12}
+          />
+          <line
+            x1={17.01}
+            x2={22.96}
+            y1={12}
+            y2={12}
+          />
+        </svg>
+        <p>
+          Add a GitHub repo from the 
+          <span>
+            Search
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      className="sc-AxmLO hUoinZ"
+      id="graph-container"
+    >
+      <div />
+    </div>
+  </div>,
+  <div
+    className="sc-AxhCb eLCFXh"
+  >
+    <button
+      className="sc-AxirZ ktnnZK"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line
+          x1={5}
+          x2={19}
+          y1={12}
+          y2={12}
+        />
+        <polyline
+          points="12 5 19 12 12 19"
+        />
+      </svg>
+    </button>
+    <div
+      className="sc-AxhUy gIZrpB"
+      loading="false"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Search a GitHub Repository..."
+        tabIndex={0}
+        type="search"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={11}
+          cy={11}
+          r={8}
+        />
+        <line
+          x1={21}
+          x2={16.65}
+          y1={21}
+          y2={16.65}
+        />
+      </svg>
+      <ul />
+    </div>
+    <div
+      className="sc-AxgMl iMuSpT"
+    >
+      <aside>
+        <svg
+          aria-hidden="true"
+          className="StyledIconBase-ea9ulj-0 jVnGjM"
+          fill="none"
+          focusable="false"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx={11}
+            cy={11}
+            r={8}
+          />
+          <line
+            x1={21}
+            x2={16.65}
+            y1={21}
+            y2={16.65}
+          />
+        </svg>
+        <p>
+          <span>
+            Search for a GitHub repository
+          </span>
+           to populate graph
+        </p>
+      </aside>
+    </div>
+    <button
+      className="sc-AxiKw kYegsT"
+      onClick={[Function]}
+      tabIndex={0}
+    >
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={10}
+        />
+        <path
+          d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"
+        />
+        <line
+          x1={12}
+          x2={12.01}
+          y1={17}
+          y2={17}
+        />
+      </svg>
+    </button>
+  </div>,
+  <div
+    className="sc-fzplWN knkPpE"
+  >
+    <div>
+      <button
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="StyledIconBase-ea9ulj-0 jVnGjM"
+          fill="none"
+          focusable="false"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            x1={18}
+            x2={6}
+            y1={6}
+            y2={18}
+          />
+          <line
+            x1={6}
+            x2={18}
+            y1={6}
+            y2={18}
+          />
+        </svg>
+      </button>
+      <p>
+        <small>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 jVnGjM"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+            />
+          </svg>
+          GitHub URL
+        </small>
+      </p>
+      <p>
+        <a
+          href="undefined"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <code />
+        </a>
+      </p>
+      <p>
+        <small>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 jVnGjM"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx={12}
+              cy={12}
+              r={4}
+            />
+            <line
+              x1={1.05}
+              x2={7}
+              y1={12}
+              y2={12}
+            />
+            <line
+              x1={17.01}
+              x2={22.96}
+              y1={12}
+              y2={12}
+            />
+          </svg>
+          GitHub COMMIT
+        </small>
+      </p>
+      <p>
+        <a
+          href="undefined/commit/undefined"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <code />
+        </a>
+      </p>
+      <p>
+        <small>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 jVnGjM"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="14 9 9 4 4 9"
+            />
+            <path
+              d="M20 20h-7a4 4 0 01-4-4V4"
+            />
+          </svg>
+          Deployment
+        </small>
+      </p>
+      <p>
+        <a
+          href="undefined"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <code />
+        </a>
+      </p>
+      <p>
+        <small>
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 jVnGjM"
+            fill="none"
+            focusable="false"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+            />
+            <circle
+              cx={12}
+              cy={7}
+              r={4}
+            />
+          </svg>
+          GitHub User
+        </small>
+      </p>
+      <p>
+        <a
+          href="https://github.com/undefined"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <code>
+            @
+          </code>
+        </a>
+      </p>
+    </div>
+  </div>,
+]
+`;

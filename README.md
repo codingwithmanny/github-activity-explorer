@@ -1,44 +1,122 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub Activity Explorer
 
-## Available Scripts
+A web based SPA React application that allows you to see the commit history for
+different GitHub repositories.
 
-In the project directory, you can run:
+52 weeks of the year, assumes Monday as starting day of the week.
 
-### `yarn start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## TOC
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Requirements](#requirements)
+- [Local Setup](#local-setup)
+- [Deployments](#deployments)
+- [Tests](#tests)
+- [Hooks](#hooks)
+- [Development](#development)
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
 
-### `yarn build`
+- NodeJS 12.18.1 or NVM
+- Yarn
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Local Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Step 1 - Install Correct NodeJS Version**
 
-### `yarn eject`
+```bash
+nvm install;
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Step 2 - Install Depedencies**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn; # npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deployments
 
-## Learn More
+The deployment process is:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1 - PR submission
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2 - Validate tests pass with CircleCI
+
+3 - Merge code
+
+4 - Code is autodeployed to Netlify
+
+### Building
+
+Building is meant to test for production locally but builds will be
+automatically built with Netlify.
+
+```bash
+yarn build;
+```
+
+### CircleCI
+
+CircleCI will run everything mentioned in the **Tests** section.
+
+It will run `yarn test` to validate and do one last check.
+
+### Netlify
+
+TBD
+
+---
+
+## Tests
+
+**Eslint** - Meant to validate if there are linting issues
+
+**TypeScript Compiler** - Meant to catch type errors
+
+**Jest Snapshots** - Tests that take snapshots of the UI for consistency
+
+**Cypress** - Tests e2e with API to validate functionality
+
+---
+
+## Hooks
+
+There are two hooks
+
+1 - `.huskyrc` which is a githook which runs lint-staged and performs a test on
+each commit
+
+2 - `.lintstagedrc` which handles testing only staged files vs all files
+currently working on
+
+---
+
+## Development
+
+**Commits**
+
+Should be run with `yarn commit`.
+
+**Logic / Container Components**
+
+Should not be used to handle UI but manipulating and passing data to
+presentation components.
+
+**UI / Presentation Components**
+
+Should be used solely for UI and using callback functions defined by container
+components.
+
+**Code Snippets**
+
+For code snippets, see `./.vsode/snippets.code-snippets`
+
+You can also create you own snippets to add from here:
+[https://snippet-generator.app](https://snippet-generator.app)

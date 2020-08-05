@@ -1,17 +1,20 @@
+// IMPORTS
+// --------------------------------------------------------
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
+// Presentation Components
+import AppContainer from './container/App';
+
+// Styled Components
+import GlobalStyles from './styles/GlobalStyles';
+
+// MAIN RENDER
+// --------------------------------------------------------
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyles />
+    <AppContainer />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders <Graph /> Loading No History 1`] = `
+<div
+  className="sc-AxjAm dnhGgo"
+>
+  <div
+    className="sc-AxhCb dBBoqb"
+    loading="true"
+  >
+    <svg
+      height="38"
+      stroke="#fff"
+      viewBox="0 0 38 38"
+      width="38"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          strokeWidth="2"
+          transform="translate(1 1)"
+        >
+          <circle
+            cx="18"
+            cy="18"
+            r="18"
+            strokeOpacity=".5"
+          />
+          <path
+            d="M36 18c0-9.94-8.06-18-18-18"
+          >
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              from="0 18 18"
+              repeatCount="indefinite"
+              to="360 18 18"
+              type="rotate"
+            />
+          </path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="sc-AxiKw dPZxpP"
+  >
+    <div>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={4}
+        />
+        <line
+          x1={1.05}
+          x2={7}
+          y1={12}
+          y2={12}
+        />
+        <line
+          x1={17.01}
+          x2={22.96}
+          y1={12}
+          y2={12}
+        />
+      </svg>
+      <p>
+        Add a GitHub repo from the 
+        <span>
+          Search
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ fWKoxm"
+    id="graph-container"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Renders <Graph /> Not Loading No History 1`] = `
+<div
+  className="sc-AxjAm dnhGgo"
+>
+  <div
+    className="sc-AxhCb eIDrU"
+    loading="false"
+  >
+    <svg
+      height="38"
+      stroke="#fff"
+      viewBox="0 0 38 38"
+      width="38"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          strokeWidth="2"
+          transform="translate(1 1)"
+        >
+          <circle
+            cx="18"
+            cy="18"
+            r="18"
+            strokeOpacity=".5"
+          />
+          <path
+            d="M36 18c0-9.94-8.06-18-18-18"
+          >
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              from="0 18 18"
+              repeatCount="indefinite"
+              to="360 18 18"
+              type="rotate"
+            />
+          </path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="sc-AxiKw dPZxpP"
+  >
+    <div>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={4}
+        />
+        <line
+          x1={1.05}
+          x2={7}
+          y1={12}
+          y2={12}
+        />
+        <line
+          x1={17.01}
+          x2={22.96}
+          y1={12}
+          y2={12}
+        />
+      </svg>
+      <p>
+        Add a GitHub repo from the 
+        <span>
+          Search
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ fWKoxm"
+    id="graph-container"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`Renders <Graph /> Not Loading With History 1`] = `
+<div
+  className="sc-AxjAm dnhGgo"
+>
+  <div
+    className="sc-AxhCb eIDrU"
+    loading="false"
+  >
+    <svg
+      height="38"
+      stroke="#fff"
+      viewBox="0 0 38 38"
+      width="38"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fill="none"
+        fillRule="evenodd"
+      >
+        <g
+          strokeWidth="2"
+          transform="translate(1 1)"
+        >
+          <circle
+            cx="18"
+            cy="18"
+            r="18"
+            strokeOpacity=".5"
+          />
+          <path
+            d="M36 18c0-9.94-8.06-18-18-18"
+          >
+            <animateTransform
+              attributeName="transform"
+              dur="1s"
+              from="0 18 18"
+              repeatCount="indefinite"
+              to="360 18 18"
+              type="rotate"
+            />
+          </path>
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="sc-AxiKw dPZxpP"
+  >
+    <div>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={12}
+          cy={12}
+          r={4}
+        />
+        <line
+          x1={1.05}
+          x2={7}
+          y1={12}
+          y2={12}
+        />
+        <line
+          x1={17.01}
+          x2={22.96}
+          y1={12}
+          y2={12}
+        />
+      </svg>
+      <p>
+        Add a GitHub repo from the 
+        <span>
+          Search
+        </span>
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ fWKoxm"
+    id="graph-container"
+  >
+    <div />
+  </div>
+</div>
+`;

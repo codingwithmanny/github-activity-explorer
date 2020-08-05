@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Sidebar Default State 1`] = `
+<div
+  className="sc-AxiKw iVBsuh"
+>
+  <button
+    className="sc-AxjAm StDqN"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1={5}
+        x2={19}
+        y1={12}
+        y2={12}
+      />
+      <polyline
+        points="12 5 19 12 12 19"
+      />
+    </svg>
+  </button>
+  <div
+    className="sc-AxhCb WifeA"
+    loading="false"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search a GitHub Repository..."
+      tabIndex={0}
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={11}
+        cy={11}
+        r={8}
+      />
+      <line
+        x1={21}
+        x2={16.65}
+        y1={21}
+        y2={16.65}
+      />
+    </svg>
+    <ul />
+  </div>
+  <div
+    className="sc-AxhUy jjoUsZ"
+  >
+    <aside>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={11}
+          cy={11}
+          r={8}
+        />
+        <line
+          x1={21}
+          x2={16.65}
+          y1={21}
+          y2={16.65}
+        />
+      </svg>
+      <p>
+        <span>
+          Search for a GitHub repository
+        </span>
+         to populate graph
+      </p>
+    </aside>
+  </div>
+  <button
+    className="sc-AxirZ jfHCrn"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        r={10}
+      />
+      <path
+        d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"
+      />
+      <line
+        x1={12}
+        x2={12.01}
+        y1={17}
+        y2={17}
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Renders Sidebar Results 1`] = `
+<div
+  className="sc-AxiKw iVBsuh"
+>
+  <button
+    className="sc-AxjAm StDqN"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1={5}
+        x2={19}
+        y1={12}
+        y2={12}
+      />
+      <polyline
+        points="12 5 19 12 12 19"
+      />
+    </svg>
+  </button>
+  <div
+    className="sc-AxhCb cClHCn"
+    loading="false"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    results={6}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search a GitHub Repository..."
+      tabIndex={0}
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={11}
+        cy={11}
+        r={8}
+      />
+      <line
+        x1={21}
+        x2={16.65}
+        y1={21}
+        y2={16.65}
+      />
+    </svg>
+    <ul>
+      <li>
+        <a
+          href="#facebookcreate-react-app"
+          onClick={[Function]}
+        >
+          <span>
+            facebook
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#expocreate-react-native-app"
+          onClick={[Function]}
+        >
+          <span>
+            expo
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-native-app
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#wmonkcreate-react-app-typescript"
+          onClick={[Function]}
+        >
+          <span>
+            wmonk
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app-typescript
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#marscreate-react-app-buildpack"
+          onClick={[Function]}
+        >
+          <span>
+            mars
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app-buildpack
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#aws-samplescreate-react-app-auth-amplify"
+          onClick={[Function]}
+        >
+          <span>
+            aws-samples
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app-auth-amplify
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#notrabcreate-react-app-redux"
+          onClick={[Function]}
+        >
+          <span>
+            notrab
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app-redux
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="sc-AxhUy jjoUsZ"
+  >
+    <aside>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 jVnGjM"
+        fill="none"
+        focusable="false"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx={11}
+          cy={11}
+          r={8}
+        />
+        <line
+          x1={21}
+          x2={16.65}
+          y1={21}
+          y2={16.65}
+        />
+      </svg>
+      <p>
+        <span>
+          Search for a GitHub repository
+        </span>
+         to populate graph
+      </p>
+    </aside>
+  </div>
+  <button
+    className="sc-AxirZ jfHCrn"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        r={10}
+      />
+      <path
+        d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"
+      />
+      <line
+        x1={12}
+        x2={12.01}
+        y1={17}
+        y2={17}
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Renders Sidebar Results 2`] = `
+<div
+  className="sc-AxiKw iVBsuh"
+>
+  <button
+    className="sc-AxjAm StDqN"
+    onClick={[Function]}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1={5}
+        x2={19}
+        y1={12}
+        y2={12}
+      />
+      <polyline
+        points="12 5 19 12 12 19"
+      />
+    </svg>
+  </button>
+  <div
+    className="sc-AxhCb WifeA"
+    loading="false"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search a GitHub Repository..."
+      tabIndex={0}
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={11}
+        cy={11}
+        r={8}
+      />
+      <line
+        x1={21}
+        x2={16.65}
+        y1={21}
+        y2={16.65}
+      />
+    </svg>
+    <ul />
+  </div>
+  <div
+    className="sc-AxhUy jjoUsZ"
+  >
+    <a
+      className="sc-AxgMl hOKIxM"
+      color="#4CCA8D"
+      href="#facebook"
+      onClick={[Function]}
+      title="[SHOW/HIDE] 'facebook/create-react-app'"
+    >
+      <div>
+        <h2>
+          <span>
+            facebook
+          </span>
+          <span>
+            /
+          </span>
+          <span>
+            create-react-app
+          </span>
+        </h2>
+        <section>
+          <span>
+            <svg
+              aria-hidden="true"
+              className="StyledIconBase-ea9ulj-0 jVnGjM"
+              fill="none"
+              focusable="false"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              />
+            </svg>
+            80.8k
+          </span>
+          <time
+            dateTime="2020-08-05T02:35:04Z"
+          >
+            Updated 
+            7 days ago
+          </time>
+        </section>
+      </div>
+      <button
+        onClick={[Function]}
+        title="[DELETE] 'facebook/create-react-app'"
+      >
+        <svg
+          aria-hidden="true"
+          className="StyledIconBase-ea9ulj-0 jVnGjM"
+          fill="none"
+          focusable="false"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="3 6 5 6 21 6"
+          />
+          <path
+            d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"
+          />
+          <line
+            x1={10}
+            x2={10}
+            y1={11}
+            y2={17}
+          />
+          <line
+            x1={14}
+            x2={14}
+            y1={11}
+            y2={17}
+          />
+        </svg>
+      </button>
+    </a>
+  </div>
+  <button
+    className="sc-AxirZ jfHCrn"
+    onClick={[Function]}
+    tabIndex={0}
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 jVnGjM"
+      fill="none"
+      focusable="false"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx={12}
+        cy={12}
+        r={10}
+      />
+      <path
+        d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"
+      />
+      <line
+        x1={12}
+        x2={12.01}
+        y1={17}
+        y2={17}
+      />
+    </svg>
+  </button>
+</div>
+`;

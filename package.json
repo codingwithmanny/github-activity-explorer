@@ -1,24 +1,68 @@
 {
   "name": "github-activity-explorer",
-  "version": "0.1.0",
+  "description": "Compare github repo commits over time",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@styled-icons/feather": "^10.6.0",
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3",
+    "color": "^3.1.2",
+    "moment": "^2.27.0",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.10.0",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1",
+    "typescript": "~3.7.2"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
+    "@types/color": "^3.0.1",
+    "@types/jest": "^26.0.8",
     "@types/node": "^12.0.0",
+    "@types/numeral": "^0.0.28",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "@types/react-test-renderer": "^16.9.3",
+    "@types/styled-components": "^5.1.1",
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "cypress": "^4.12.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-cypress": "^2.11.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest-styled-components": "^7.0.2",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "react-test-renderer": "^16.13.1",
+    "start-server-and-test": "^1.11.2"
   },
   "scripts": {
+    "commit": "npx git-cz",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn build:env",
+    "build:env": "echo \"window.API_URL='$API_URL'; window.GITHUB_COMMIT='$COMMIT_REF'; window.GITHUB_REPO_URL='$REPOSITORY_URL'; window.GITHUB_USER='$GITHUB_USER'; window.DEPLOY_ID='$DEPLOY_ID'; window.DEPLOY_URL='$DEPLOY_URL';\" > build/env.js",
     "test": "react-scripts test",
+    "test:all": "yarn lint && yarn test:jest && yarn test:e2e:run",
+    "test:jest": "react-scripts test --watchAll=false",
+    "test:e2e:open": "start-server-and-test start http://localhost:3000 cy:open",
+    "test:e2e:run": "start-server-and-test start http://localhost:3000 cy:run",
+    "lint": "yarn lint:eslint && yarn lint:tsc",
+    "lint:eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint:tsc": "tsc --noEmit",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +79,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://api.github.com"
 }

@@ -1,0 +1,54 @@
+{
+  "Presentation Component": {
+    "prefix": "pres",
+    "body": [
+      "// IMPORTS",
+      "// --------------------------------------------------------",
+      "import React from 'react';",
+      "",
+      "// Styled Components",
+      "import { $1Styles } from './styles'",
+      "",
+      "// Presentation Components",
+      "",
+      "",
+      "// MAIN PRESENTATION COMPONENT",
+      "// --------------------------------------------------------",
+      "/**",
+      " * $1",
+      " * @param {Object} props component props",
+      " * @returns {JSX} React compoennt",
+      " */",
+      "const $1: React.FC = props => {",
+      "  // State / Props",
+      "",
+      "  // Functions",
+      "",
+      "  // Hooks",
+      "",
+      "  // Render",
+      "  return <$1Styles></$1Styles>;",
+      "};",
+      "",
+      "// EXPORTS",
+      "// --------------------------------------------------------",
+      "export default $1;",
+      ""
+    ],
+    "description": "Presentation Component"
+  },
+  "Styled Component": {
+    "prefix": "styles",
+    "body": [
+      "// IMPORTS",
+      "// --------------------------------------------------------",
+      "import styled from 'styled-components';",
+      "",
+      "// MAIN STYLES",
+      "// --------------------------------------------------------",
+      "export const $1Styles = styled.div``;",
+      ""
+    ],
+    "description": "Styled Component"
+  }
+}
