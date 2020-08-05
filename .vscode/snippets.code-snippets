@@ -16,7 +16,7 @@
       "// --------------------------------------------------------",
       "/**",
       " * $1",
-      " * @param {Object} props component props",
+      " * @param {object} props component props",
       " * @returns {JSX} React compoennt",
       " */",
       "const $1: React.FC = props => {",

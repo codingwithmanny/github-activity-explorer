@@ -23,7 +23,7 @@ interface InfoProps {
 // --------------------------------------------------------
 /**
  * Info
- * @param {Object} props component props
+ * @param {object} props component props
  * @returns {JSX} React compoennt
  */
 const Info: React.FC<InfoProps> = (props) => {
@@ -33,6 +33,7 @@ const Info: React.FC<InfoProps> = (props) => {
   // Functions
   /**
    * When X button is clicked
+   * @returns {void}
    */
   const onClickClose = () => {
     if (handleClose) {

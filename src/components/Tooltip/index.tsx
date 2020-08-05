@@ -79,12 +79,13 @@ export interface TooltipProps {
 // --------------------------------------------------------
 /**
  * Tooltip
- * @param {Object} props component props
+ * @param {object} props component props
  * @returns {JSX} React compoennt
  */
 const Tooltip: React.FC<TooltipProps> = (props) => {
   // State / Props
   const [data, setData] = useState<any>(null);
+
   // Hooks
   /**
    * When tooltip model data is received format it

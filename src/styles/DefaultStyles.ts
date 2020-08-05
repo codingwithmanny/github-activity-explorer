@@ -2,7 +2,7 @@
 // --------------------------------------------------------
 /**
  * Media query breakpoints
- * @constant {Object}
+ * @constant {object}
  */
 export const ScreenSizes = {
   xsmall: '640px',
@@ -14,7 +14,7 @@ export const ScreenSizes = {
 
 /**
  * Main colors
- * @constant {Object}
+ * @constant {object}
  */
 export const Colors = {
   blue: '#8383AF',
@@ -195,7 +195,7 @@ export const getGraphColor = (index: number) => {
 
 /**
  * Main font styles
- * @constant {Object}
+ * @constant {object}
  */
 export const FontStyles = {
   primary: 'Roboto, arial, sans-serif',

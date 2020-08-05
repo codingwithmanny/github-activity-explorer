@@ -40,7 +40,7 @@ interface SidebarProps {
 // --------------------------------------------------------
 /**
  * Sidebar Presentation Component
- * @param {Object} props component props
+ * @param {object} props component props
  * @returns {JSX} React compoennt
  */
 const Sidebar: React.FC<SidebarProps> = (props) => {
@@ -62,7 +62,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
   // Functions
   /**
    * Handles when input field is changed
-   * @param event
+   * @param event Inptu Change Event
    * @returns {void}
    */
   const onChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -90,7 +90,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
 
   /**
    * When a selection is made from the search results
-   * @param data
+   * @param {object} data GitHub repo object
    * @returns {void}
    */
   const onDropdownSelected = (data: any) => (
@@ -106,7 +106,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
 
   /**
    * When the delete button is clicked on existing selections
-   * @param data
+   * @param {object} data GitHub repo object
    * @returns {void}
    */
   const onClickButtonDelete = (data: any) => (
@@ -121,7 +121,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
 
   /**
    * When an item from the search results is clicked
-   * @param data
+   * @param {object} data GitHub repo object
    * @returns {void}
    */
   const onClickResults = (data: any) => (
@@ -153,10 +153,10 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
 
   /**
    * Returns formatted date from now or the exact date
-   * @param date Date time string
-   * @returns {String} formatted string
+   * @param {string} date Date time string
+   * @returns {string} formatted string
    */
-  const formatDate = (date: any) => {
+  const formatDate = (date: string) => {
     const formatted = moment(date ?? '').fromNow();
     const dictionary = ['second', 'minute', 'hour'];
 

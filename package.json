@@ -50,6 +50,7 @@
   },
   "scripts": {
     "commit": "npx git-cz",
+    "start:env": "cp public/env.example.js public/env.js",
     "start": "react-scripts start",
     "build": "react-scripts build && yarn build:env",
     "build:env": "echo \"window.API_URL='$API_URL'; window.GITHUB_COMMIT='$COMMIT_REF'; window.GITHUB_REPO_URL='$REPOSITORY_URL'; window.GITHUB_USER='$GITHUB_USER'; window.DEPLOY_ID='$DEPLOY_ID'; window.DEPLOY_URL='$DEPLOY_URL';\" > build/env.js",
