@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cypress/base:ubuntu18-node12.14.1
+      - image: cypress/base:ubuntu18-node12.18.1
         environment:
           TERM: xterm
     working_directory: ~/app
