@@ -4,7 +4,7 @@ A SPA React application that allows you to see the commit history for different
 GitHub repositories.
 
 Data is 52 weeks from the current date and assumes Monday as starting day of the
-week. Each commit history retrieval maxes out at 100 entries from GitHub.
+week. Each commit history retrieval maxes out at 100 entries from GitHub's API.
 
 **Preview:**
 [https://hungry-albattani-a8665a.netlify.app](https://hungry-albattani-a8665a.netlify.app)
