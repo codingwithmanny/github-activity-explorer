@@ -12,7 +12,7 @@
     "react": "^16.13.1",
     "react-chartjs-2": "^2.10.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.0",
     "styled-components": "^5.1.1",
     "typescript": "~3.7.2"
   },
@@ -57,7 +57,7 @@
     "test:all": "yarn lint && yarn test:jest && yarn test:e2e:run",
     "test:jest": "react-scripts test --watchAll=false",
     "test:e2e:open": "start-server-and-test start http://localhost:3000 cy:open",
-    "test:e2e:run": "start-server-and-test start http://localhost:3000 cy:run",
+    "test:e2e:run": "start-server-and-test 'yarn start' http://localhost:3000 'yarn cy:run'",
     "lint": "yarn lint:eslint && yarn lint:tsc",
     "lint:eslint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "lint:tsc": "tsc --noEmit",
