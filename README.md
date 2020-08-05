@@ -3,7 +3,11 @@
 A web based SPA React application that allows you to see the commit history for
 different GitHub repositories.
 
-52 weeks of the year, assumes Monday as starting day of the week.
+Data is from 52 weeks of the year, assumes Monday as starting day of the week.
+Each commit history retrieval maxes out at 100 entries.
+
+**Preview:**
+[https://hungry-albattani-a8665a.netlify.app](https://hungry-albattani-a8665a.netlify.app)
 
 ---
 
@@ -82,9 +86,15 @@ yarn test:e2e:run;
 
 ![CircleCI](markdown/circleci.png)
 
+The second phase of CircleCI is to automatically trigger a deployment to Netlify
+when all tests have passed.
+
 ### Netlify
 
-TBD
+All deployments are pushed to
+[https://hungry-albattani-a8665a.netlify.app](https://hungry-albattani-a8665a.netlify.app).
+
+![Netlify](markdown/netlify.png)
 
 ---
 
