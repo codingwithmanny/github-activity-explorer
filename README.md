@@ -36,7 +36,13 @@ nvm install;
 **Step 2 - Install Depedencies**
 
 ```bash
-yarn; # npm install
+yarn;
+```
+
+**Step 3 - Start Server**
+
+```bash
+yarn start;
 ```
 
 ---
