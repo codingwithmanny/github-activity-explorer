@@ -29,8 +29,14 @@ jobs:
             window.GITHUB_USER='$GITHUB_USER'; window.DEPLOY_ID='$DEPLOY_ID';
             window.DEPLOY_URL='$DEPLOY_URL';" > public/env.js
       - run:
-          name: test
-          command: yarn test:all
+          name: lint
+          command: yarn lint
+      - run:
+          name: jest + tsc
+          command: yarn test:jest
+      - run:
+          name: cypress
+          command: yarn test:e2e:run
 
 workflows:
   version: 2
