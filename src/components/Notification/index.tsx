@@ -5,7 +5,6 @@ import React from 'react';
 // Styled Components
 import { NotificationStyles } from './styles';
 
-// Presentation Components
 // TYPES
 // --------------------------------------------------------
 interface NotificationProps {
@@ -16,20 +15,16 @@ interface NotificationProps {
 // --------------------------------------------------------
 /**
  * Notification
- * @param {Object} props component props
+ * @param {object} props component props
  * @returns {JSX} React compoennt
  */
-const Notification: React.FC<NotificationProps> = (props) => {
-  // State / Props
-  const { message } = props;
-
-  // Render
-  return (
-    <NotificationStyles show={(message && message.length > 0) || false}>
-      <div>{message && message}</div>
-    </NotificationStyles>
-  );
-};
+const Notification: React.FC<NotificationProps> = (props) => (
+  <NotificationStyles
+    show={(props.message && props.message.length > 0) || false}
+  >
+    <div>{props.message && props.message}</div>
+  </NotificationStyles>
+);
 
 // EXPORTS
 // --------------------------------------------------------

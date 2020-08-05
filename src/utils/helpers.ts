@@ -5,8 +5,8 @@
 // --------------------------------------------------------
 /**
  * Formats number as abbreviated name
- * @param {Number} number number to be formatted
- * @returns {String}
+ * @param {number} number number to be formatted
+ * @returns {string}
  */
 export const formatNumber = (number: string): string => {
   const StringInt: number = parseInt(number.replace(',', ''));

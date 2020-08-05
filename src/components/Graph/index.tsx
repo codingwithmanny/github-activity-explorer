@@ -189,7 +189,7 @@ const Graph: React.FC<GraphProps> = (props) => {
         }),
       }));
 
-      // Once set animation until end
+      // Once set scroll to the end (all the way to the right)
       const graphContainerWidth =
         document?.querySelector('#graph-container > div')?.clientWidth ?? 0;
       const container = document?.querySelector('#graph-container');
@@ -204,6 +204,7 @@ const Graph: React.FC<GraphProps> = (props) => {
         labels: [],
         datasets: [],
       });
+      // Reset scrolling
       const container = document?.querySelector('#graph-container');
       if (container) {
         container.scrollTo({

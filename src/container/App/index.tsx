@@ -35,9 +35,9 @@ const AppContainer: React.FC = () => {
   // Functions
   /**
    * Expected graph data and formats within the week object given
-   * @param data
-   * @param allWeeks
-   * @returns {Object} with all data merged with allWeeks
+   * @param {array} data Array of GitHub commits
+   * @param {object} allWeeks object which contains all 52 weeks
+   * @returns {object} with all data merged with allWeeks
    */
   const formatGraphData = (data: Array<any>, allWeeks: any) => {
     if (data?.length > 0) {
@@ -64,8 +64,8 @@ const AppContainer: React.FC = () => {
   /**
    * Formats, sends request for commit history, and updates local state
    * @param {string} query repo to be queried
-   * @param repo @TODO
-   * @param colorUsed @TODO
+   * @param {object} repo GitHub repo object
+   * @param {number} colorUsed index of color used to avoid duplication
    * @returns {void}
    */
   const handleCommitHistoryRequest = async (
@@ -192,7 +192,7 @@ const AppContainer: React.FC = () => {
 
   /**
    * When a repo is selected perform the request to retrieve its commit history
-   * @param {Object} data Repo object data from GitHub
+   * @param {object} data Repo object data from GitHub
    * @returns {void}
    */
   const handleRepoSelected = (data: any) => {
@@ -220,7 +220,7 @@ const AppContainer: React.FC = () => {
 
   /**
    * When an repo is removed from the current selection
-   * @param {Object} data GitHub repo object
+   * @param {object} data GitHub repo object
    * @returns {void}
    */
   const handleRemoveRepo = (data: any) => {
@@ -248,7 +248,7 @@ const AppContainer: React.FC = () => {
 
   /**
    * Toggles showing / hiding a selection
-   * @param {Object} data GitHub repo object
+   * @param {object} data GitHub repo object
    * @returns {void}
    */
   const handleToggleShow = (data: any) => {

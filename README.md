@@ -45,7 +45,15 @@ nvm install;
 yarn;
 ```
 
-**Step 3 - Start Server**
+**Step 3 - Create Env Vars File**
+
+This makes a copy of `public/env.example.js` as `public/env.js`
+
+```bash
+yarn start:env;
+```
+
+**Step 4 - Start Server**
 
 ```bash
 yarn start;
