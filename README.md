@@ -72,7 +72,15 @@ yarn build;
 
 CircleCI will run everything mentioned in the **Tests** section.
 
-It will run `yarn test` to validate and do one last check.
+It will run the following tests to validate and do one last check.
+
+```bash
+yarn lint;
+yarn test:jest;
+yarn test:e2e:run;
+```
+
+![CircleCI](markdown/circleci.png)
 
 ### Netlify
 
