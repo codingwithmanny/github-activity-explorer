@@ -63,6 +63,38 @@ yarn start;
 
 ## Deployments
 
+### Environment Variables
+
+There are a few environment variables associated in the `public/env.js`
+
+`API_URL`
+
+for production will need to be set to the github api url. For local development,
+this should be blank because it uses the proxy defined in `package.json`.
+
+`GITHUB_COMMIT`
+
+This value is to store the github commit SHA. Netlify handles this for
+production and is not mandatory for local development.
+
+`GITHUB_USER`
+
+This value is to store the github username. Netlify handles this for production
+and is not mandatory for local development.
+
+`DEPLOY_ID`
+
+This value is to store the Netlify deployment id. Netlify handles this for
+production and is not mandatory for local development.
+
+`DEPLOY_URL`
+
+This value is to store the Netlify deployment url for the specific deployment
+id. Netlify handles this for production and is not mandatory for local
+development.
+
+### Process
+
 The deployment process is:
 
 1 - PR submission
@@ -96,12 +128,8 @@ yarn test:e2e:run;
 
 ![CircleCI](markdown/circleci.png)
 
-The second phase of CircleCI is to automatically trigger a deployment to Netlify
-when all tests have passed.
-
-![CircleCI Deployment](markdown/circleci-deployment.png)
-
-This will trigger Netlify to start the build and deployment process:
+Onced merged, this will trigger Netlify to start the build and deployment
+process:
 
 ![Netlify Deployment](markdown/netlify-deployment.png)
 
