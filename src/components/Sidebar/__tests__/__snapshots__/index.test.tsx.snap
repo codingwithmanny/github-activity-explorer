@@ -72,6 +72,7 @@ exports[`Renders Sidebar Default State 1`] = `
   </div>
   <div
     className="sc-AxhUy ljcNHT"
+    id="selections"
   >
     <aside>
       <svg
@@ -312,6 +313,7 @@ exports[`Renders Sidebar Results 1`] = `
   </div>
   <div
     className="sc-AxhUy ljcNHT"
+    id="selections"
   >
     <aside>
       <svg
@@ -454,6 +456,7 @@ exports[`Renders Sidebar Results 2`] = `
   </div>
   <div
     className="sc-AxhUy ljcNHT"
+    id="selections"
   >
     <div
       className="sc-AxgMl hMGECM"

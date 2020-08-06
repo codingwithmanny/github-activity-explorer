@@ -171,6 +171,7 @@ Array [
     </div>
     <div
       className="sc-AxgMl hFhLOJ"
+      id="selections"
     >
       <aside>
         <svg

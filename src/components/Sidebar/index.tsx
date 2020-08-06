@@ -251,7 +251,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
         </ul>
       </Dropdown>
 
-      <Selections>
+      <Selections id="selections">
         {repos && repos?.length > 0 ? (
           <>
             {repos?.map((i: any, k: number) => (

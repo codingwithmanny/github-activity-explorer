@@ -38,7 +38,7 @@ context('Tests main view', () => {
   /**
    * Validates adding two graphs and deleting them
    */
-  it('Should show results when term entered', () => {
+  it('Should show selected results', () => {
     // Sidebar Section
     cy.get('input[type=search]').type('create react app');
     cy.get('ul > li a span:first-child').should('contain', 'facebook');
@@ -46,14 +46,23 @@ context('Tests main view', () => {
     cy.get('ul > li a span:nth-child(3)').should('contain', 'create-react-app');
     cy.get('ul > li:first-child a').click();
     cy.get('ul li').should('have.length', 0);
-    cy.get('div > a').should('have.length', 1);
-    cy.get('div > a > div h2 span:first-child').should('contain', 'facebook');
-    cy.get('div > a > div h2 span:nth-child(2)').should('contain', '/');
-    cy.get('div > a > div h2 span:nth-child(3)').should(
+    cy.get('#selections > div').should('have.length', 1);
+    cy.get('#selections > div > button > div h2 span:first-child').should(
+      'contain',
+      'facebook',
+    );
+    cy.get('#selections > div > button > div h2 span:nth-child(2)').should(
+      'contain',
+      '/',
+    );
+    cy.get('#selections > div > button > div h2 span:nth-child(3)').should(
       'contain',
       'create-react-app',
     );
-    cy.get('div > a > div section > time').should('contain', 'Updated');
+    cy.get('#selections > div > button > div section > time').should(
+      'contain',
+      'Updated',
+    );
 
     // Add second repository
     cy.get('input[type=search]').type('angular angular');
@@ -62,15 +71,16 @@ context('Tests main view', () => {
     cy.get('ul > li a span:nth-child(3)').should('contain', 'angular');
     cy.get('ul > li:first-child a').click();
     cy.get('ul li').should('have.length', 0);
-    cy.get('div > a').should('have.length', 2);
-    cy.get('div > a:last-child').click();
-    cy.get('div > a:first-child').focus();
-    cy.get('div > a').should('have.length', 2);
+
+    cy.get('#selections > div').should('have.length', 2);
+    cy.get('#selections > div:first-child > button:first-child').click();
+    cy.get('#selections > div:first-child > button:first-child').focus();
+    cy.get('#selections > div').should('have.length', 2);
 
     // Remove all
-    cy.get('div > a:first-child button').click();
-    cy.get('div > a').should('have.length', 1);
-    cy.get('div > a:first-child button').click();
-    cy.get('div > a').should('have.length', 0);
+    cy.get('#selections > div:first-child > button:nth-child(2)').click();
+    cy.get('#selections > div').should('have.length', 1);
+    cy.get('#selections > div:first-child > button:nth-child(2)').click();
+    cy.get('#selections > div').should('have.length', 0);
   });
 });
