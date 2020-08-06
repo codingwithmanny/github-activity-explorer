@@ -125,7 +125,7 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
    * @returns {void}
    */
   const onClickResults = (data: any) => (
-    event: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => {
     if (handleToggleSelected) {
       handleToggleSelected(data);
@@ -259,26 +259,28 @@ const Sidebar: React.FC<SidebarProps> = (props) => {
                 active={i.active ?? false}
                 color={i.color}
                 key={`github-repo-selections-${k}`}
-                title={`[SHOW/HIDE] '${i?.owner?.login}/${i?.name}'`}
-                href={`#${i?.owner?.login}`}
-                onClick={onClickResults(i)}
               >
-                <div>
-                  <h2>
-                    <span>{i?.owner?.login}</span>
-                    <span>/</span>
-                    <span>{i?.name}</span>
-                  </h2>
-                  <section>
-                    <span>
-                      <Star strokeWidth={'2'} />
-                      {formatNumber(`${i?.stargazers_count ?? 0}`)}
-                    </span>
-                    <time dateTime={`${i?.updated_at}`}>
-                      Updated {formatDate(i?.updated_at)}
-                    </time>
-                  </section>
-                </div>
+                <button
+                  title={`[SHOW/HIDE] '${i?.owner?.login}/${i?.name}'`}
+                  onClick={onClickResults(i)}
+                >
+                  <div>
+                    <h2>
+                      <span>{i?.owner?.login}</span>
+                      <span>/</span>
+                      <span>{i?.name}</span>
+                    </h2>
+                    <section>
+                      <span>
+                        <Star strokeWidth={'2'} />
+                        {formatNumber(`${i?.stargazers_count ?? 0}`)}
+                      </span>
+                      <time dateTime={`${i?.updated_at}`}>
+                        Updated {formatDate(i?.updated_at)}
+                      </time>
+                    </section>
+                  </div>
+                </button>
                 <button
                   title={`[DELETE] '${i?.owner?.login}/${i?.name}'`}
                   onClick={onClickButtonDelete(i)}

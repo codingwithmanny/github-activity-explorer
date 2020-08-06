@@ -1,7 +1,7 @@
 {
   "name": "github-activity-explorer",
   "description": "Compare github repo commits over time",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@styled-icons/feather": "^10.6.0",

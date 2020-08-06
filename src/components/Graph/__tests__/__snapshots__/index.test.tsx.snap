@@ -2,7 +2,7 @@
 
 exports[`Renders <Graph /> Loading No History 1`] = `
 <div
-  className="sc-AxjAm dnhGgo"
+  className="sc-AxjAm cKDmmY"
 >
   <div
     className="sc-AxhCb dBBoqb"
@@ -46,7 +46,7 @@ exports[`Renders <Graph /> Loading No History 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxiKw dPZxpP"
+    className="sc-AxiKw bcCyIt"
   >
     <div>
       <svg
@@ -88,7 +88,7 @@ exports[`Renders <Graph /> Loading No History 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxirZ fWKoxm"
+    className="sc-AxirZ izFMSS"
     id="graph-container"
   >
     <div />
@@ -98,7 +98,7 @@ exports[`Renders <Graph /> Loading No History 1`] = `
 
 exports[`Renders <Graph /> Not Loading No History 1`] = `
 <div
-  className="sc-AxjAm dnhGgo"
+  className="sc-AxjAm cKDmmY"
 >
   <div
     className="sc-AxhCb eIDrU"
@@ -142,7 +142,7 @@ exports[`Renders <Graph /> Not Loading No History 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxiKw dPZxpP"
+    className="sc-AxiKw bcCyIt"
   >
     <div>
       <svg
@@ -184,7 +184,7 @@ exports[`Renders <Graph /> Not Loading No History 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxirZ fWKoxm"
+    className="sc-AxirZ izFMSS"
     id="graph-container"
   >
     <div />
@@ -194,7 +194,7 @@ exports[`Renders <Graph /> Not Loading No History 1`] = `
 
 exports[`Renders <Graph /> Not Loading With History 1`] = `
 <div
-  className="sc-AxjAm dnhGgo"
+  className="sc-AxjAm cKDmmY"
 >
   <div
     className="sc-AxhCb eIDrU"
@@ -238,7 +238,7 @@ exports[`Renders <Graph /> Not Loading With History 1`] = `
     </svg>
   </div>
   <div
-    className="sc-AxiKw dPZxpP"
+    className="sc-AxiKw bcCyIt"
   >
     <div>
       <svg
@@ -280,7 +280,7 @@ exports[`Renders <Graph /> Not Loading With History 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxirZ fWKoxm"
+    className="sc-AxirZ izFMSS"
     id="graph-container"
   >
     <div />

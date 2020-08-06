@@ -1,6 +1,7 @@
 // IMPORTS
 // --------------------------------------------------------
 import styled, { keyframes } from 'styled-components';
+import color from 'color';
 import { Colors, ScreenSizes } from '../../styles/DefaultStyles';
 
 // ANIMATIONS
@@ -316,15 +317,60 @@ export const Dropdown = styled.div<DropdownProps>`
 export const Selections = styled.div`
   margin-top: 75px;
   padding: 10px 30px 0 30px;
-  height: calc(100vh - 170px);
+  height: calc(100% - 85px);
   overflow: scroll;
 
-  > a {
+  aside {
+    background: ${Colors.darkestBlue};
+    border-radius: 16px;
+    padding: 50px 20px 40px 20px;
+    text-align: center;
     animation: ${fadeUp} 500ms ease-in-out 0s forwards;
+
+    > svg {
+      height: 46px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    color: ${Colors.purple};
+  }
+
+  @media (min-width: ${ScreenSizes.medium}) {
+    aside {
+      p {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+`;
+
+/**
+ * Main container for selection component
+ * @constant {JSX} styled component
+ */
+export const Selection = styled.div<SelectionProps>`
+  opacity: ${(props) => (props.active ? '1' : '0.3')} !important;
+  position: relative;
+  border-radius: 4px;
+  transition: all 250ms ease-in-out 0s;
+  animation: ${fadeUp} 500ms ease-in-out 0s forwards;
+
+  > button {
+    background: ${(props) => props.color};
+    border: none;
     display: flex;
     height: 80px;
     margin-bottom: 16px;
     border-radius: 4px;
+    padding: 0;
     width: 100%;
     overflow: hidden;
     cursor: pointer;
@@ -334,10 +380,10 @@ export const Selections = styled.div`
     color: ${Colors.lightPurple};
 
     > div {
+      text-align: left;
       background: ${Colors.darkBlue};
       padding: 16px;
-      border-bottom-left-radius: 4px;
-      border-top-left-radius: 4px;
+      border-radius: 4px;
       height: 48px;
       width: calc(100% - 8px);
       overflow: hidden;
@@ -391,12 +437,22 @@ export const Selections = styled.div`
       }
     }
 
-    button {
+    &:before {
+      content: '';
+      display: block;
+      height: 80px;
+      width: 8px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:nth-child(2) {
       cursor: pointer;
-      background: transparent;
       border: none;
       color: ${Colors.white};
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
       padding: 0;
@@ -407,93 +463,54 @@ export const Selections = styled.div`
       bottom: 0;
       height: 80px;
       width: 68px;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
       transition: all 250ms ease-in-out 0s;
-      background: rgba(0, 0, 0, 0.3);
+      background: ${color(Colors.black).alpha(0.3).toString()};
 
       svg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
         height: 24px;
         transition: all 250ms ease-in-out 0s;
       }
-
-      &:focus,
-      &:hover {
-        outline: none;
-        background: rgba(0, 0, 0, 0.3);
-        svg {
-          transform: translateX(0px);
-        }
-      }
     }
-
-    &:before {
-      content: '';
-      display: block;
-      height: 80px;
-      width: 8px;
-    }
-
-    &:hover,
-    &:focus,
-    &:focus-within {
-      outline: none;
-      box-shadow: 0 0 0 0.2rem rgba(113, 183, 248, 0.3);
-
-      button {
-        svg {
-          transform: translateX(0px);
-        }
-      }
-    }
-  }
-
-  aside {
-    background: ${Colors.darkestBlue};
-    border-radius: 16px;
-    padding: 50px 20px 40px 20px;
-    text-align: center;
-    animation: ${fadeUp} 500ms ease-in-out 0s forwards;
-
-    > svg {
-      height: 46px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin: 0;
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    color: ${Colors.purple};
   }
 
   @media (min-width: ${ScreenSizes.medium}) {
-    > a {
-      button {
-        background: none;
+    > button {
+      &:focus {
+        outline: none;
+      }
 
+      &:nth-child(2) {
+        background: transparent;
         svg {
           transform: translateX(68px);
         }
       }
     }
-    aside {
-      p {
-        span {
-          display: block;
+
+    &:focus-within,
+    &:hover {
+      box-shadow: 0 0 0 0.2rem rgba(113, 183, 248, 0.3);
+
+      button {
+        &:nth-child(2) {
+          &:focus,
+          &:hover {
+            background: ${color(Colors.black).alpha(0.3).toString()};
+          }
+
+          svg {
+            transform: translateX(0px);
+          }
         }
       }
     }
   }
-`;
-
-/**
- * Main container for selection component
- * @constant {JSX} styled component
- */
-export const Selection = styled.a<SelectionProps>`
-  background: ${(props) => props.color};
-  opacity: ${(props) => (props.active ? '1' : '0.3')} !important;
 `;
