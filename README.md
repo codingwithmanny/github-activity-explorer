@@ -16,6 +16,7 @@ week. Each commit history retrieval maxes out at 100 entries from GitHub's API.
 ## TOC
 
 - [Requirements](#requirements)
+- [Caveats](#caveats)
 - [Local Setup](#local-setup)
 - [Deployments](#deployments)
 - [Tests](#tests)
@@ -28,6 +29,17 @@ week. Each commit history retrieval maxes out at 100 entries from GitHub's API.
 
 - NodeJS 12.18.1 or NVM
 - Yarn
+
+---
+
+## Caveats
+
+Mobile Safari has a known issue with canvas where the memory limit can max out
+at 224 MB and will not display the charts.
+
+```
+⚠️ Total canvas memory use exceeds the maximum limit (224 MB).
+```
 
 ---
 

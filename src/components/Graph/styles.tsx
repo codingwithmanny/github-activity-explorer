@@ -54,10 +54,11 @@ interface GraphShowHideProps {
  * @constant {JSX} styled component
  */
 export const GraphStyles = styled.div`
-  overflow: hidden;
-  padding-top: 80px;
+  display: block;
   position: relative;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 
   @media (min-width: ${ScreenSizes.medium}) {
     width: calc(100% - 538px);
@@ -69,21 +70,23 @@ export const GraphStyles = styled.div`
  * @constant {JSX} styled component
  */
 export const GraphContainerStyles = styled.div<GraphShowHideProps>`
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: ${(props) => (props.show ? 1 : 0)};
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 80px);
   overflow-x: scroll;
   scroll-behavior: smooth;
   transition: all 250ms ease-in-out 0s;
 
   > div {
     height: 100%;
-    width: ${120 * 52}px;
-  }
-
-  .canvas-container {
-    height: 100%;
+    width: 2000px;
   }
 `;
 
@@ -92,32 +95,43 @@ export const GraphContainerStyles = styled.div<GraphShowHideProps>`
  * @constant {JSX} styled component
  */
 export const GraphNoResultsStyles = styled.div<GraphShowHideProps>`
-  display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
-  top: 0;
   left: 0;
-  justify-content: center;
-  align-items: center;
+  bottom: 0;
+  right: 0;
   animation: ${(props) => (props.show ? fadeUp : fadeDown)} 400ms ease-in-out 0s
     forwards;
   z-index: 50;
+  opacity: ${(props) => (props.show ? '1' : '0')};
+  top: ${(props) => (props.show ? '0' : '100%')};
 
-  svg {
-    display: block;
-    margin: 0 auto;
-    color: ${Colors.darkPurple};
-    height: 60px;
-  }
+  > div {
+    margin: auto;
+    height: 110px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-  p {
-    color: ${Colors.darkPurple};
+    svg {
+      display: block;
+      margin: 0 auto;
+      color: ${Colors.darkPurple};
+      height: 60px;
+    }
 
-    span {
-      background: ${Colors.lightestPurple};
-      padding: 8px 12px;
-      border-radius: 4px;
+    p {
+      color: ${Colors.darkPurple};
+      text-align: center;
+
+      span {
+        background: ${Colors.lightestPurple};
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
     }
   }
 `;

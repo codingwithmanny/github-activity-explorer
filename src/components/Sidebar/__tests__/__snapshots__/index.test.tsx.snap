@@ -71,7 +71,8 @@ exports[`Renders Sidebar Default State 1`] = `
     <ul />
   </div>
   <div
-    className="sc-AxhUy jjoUsZ"
+    className="sc-AxhUy ljcNHT"
+    id="selections"
   >
     <aside>
       <svg
@@ -311,7 +312,8 @@ exports[`Renders Sidebar Results 1`] = `
     </ul>
   </div>
   <div
-    className="sc-AxhUy jjoUsZ"
+    className="sc-AxhUy ljcNHT"
+    id="selections"
   >
     <aside>
       <svg
@@ -453,55 +455,58 @@ exports[`Renders Sidebar Results 2`] = `
     <ul />
   </div>
   <div
-    className="sc-AxhUy jjoUsZ"
+    className="sc-AxhUy ljcNHT"
+    id="selections"
   >
-    <a
-      className="sc-AxgMl hOKIxM"
+    <div
+      className="sc-AxgMl hMGECM"
       color="#4CCA8D"
-      href="#facebook"
-      onClick={[Function]}
-      title="[SHOW/HIDE] 'facebook/create-react-app'"
     >
-      <div>
-        <h2>
-          <span>
-            facebook
-          </span>
-          <span>
-            /
-          </span>
-          <span>
-            create-react-app
-          </span>
-        </h2>
-        <section>
-          <span>
-            <svg
-              aria-hidden="true"
-              className="StyledIconBase-ea9ulj-0 jVnGjM"
-              fill="none"
-              focusable="false"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+      <button
+        onClick={[Function]}
+        title="[SHOW/HIDE] 'facebook/create-react-app'"
+      >
+        <div>
+          <h2>
+            <span>
+              facebook
+            </span>
+            <span>
+              /
+            </span>
+            <span>
+              create-react-app
+            </span>
+          </h2>
+          <section>
+            <span>
+              <svg
+                aria-hidden="true"
+                className="StyledIconBase-ea9ulj-0 jVnGjM"
+                fill="none"
+                focusable="false"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              80.8k
+            </span>
+            <time
+              dateTime="2020-08-05T02:35:04Z"
             >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-              />
-            </svg>
-            80.8k
-          </span>
-          <time
-            dateTime="2020-08-05T02:35:04Z"
-          >
-            Updated 
-            7 days ago
-          </time>
-        </section>
-      </div>
+              Updated 
+              7 days ago
+            </time>
+          </section>
+        </div>
+      </button>
       <button
         onClick={[Function]}
         title="[DELETE] 'facebook/create-react-app'"
@@ -538,7 +543,7 @@ exports[`Renders Sidebar Results 2`] = `
           />
         </svg>
       </button>
-    </a>
+    </div>
   </div>
   <button
     className="sc-AxirZ jfHCrn"
