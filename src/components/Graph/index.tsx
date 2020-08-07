@@ -143,10 +143,18 @@ const Graph: React.FC<GraphProps> = (props) => {
    */
   useEffect(() => {
     if (history && history?.length > 0) {
+      // Find index of repo commit logs data greater than 0 to use for labels
+      const historyIndex = history?.findIndex(
+        (i) => (Object.entries(i?.logs)?.length ?? 0) > 0,
+      );
+
       setData((prevData: any) => ({
         ...prevData,
         // Updated labels
-        labels: Object.entries(history[0]?.logs)?.map((i) => i[0]) ?? [],
+        labels:
+          Object.entries(
+            history[historyIndex === -1 ? 0 : historyIndex]?.logs,
+          )?.map((i) => i[0]) ?? [],
         // Updated data
         datasets: history.map((i: any) => {
           const dateEntries: Array<Array<any>> = Object.entries(i?.logs).filter(
